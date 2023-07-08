@@ -189,14 +189,14 @@ body main .main .absolute-section .scndflex .art-flex .cards .box.active {
   background-color: hsl(228, 28%, 20%);
 }
 body main .main .absolute-section .scndflex .art-flex .cards .box .text {
-  width: 100%;
+  width: 90%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 body main .main .absolute-section .scndflex .art-flex .cards .box .numbers {
-  width: 100%;
+  width: 90%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 body main .main .absolute-section .scndflex .art-flex .cards .box .numbers .global {
