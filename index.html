@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter">
+  <link rel="stylesheet" href="sass/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="script.js" defer></script>
+  
+  <title>Frontend Mentor | [AlphaCharlieWeb]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="main">
+      <section class="absolute-section">
+        <article class="head">
+          <div class="head-title">
+            <h1>Social Media Dashboard</h1>
+
+            <h6>Total Followers: 23 004</h6>
+          </div>
+
+          <div class="div-toggle">
+            <h6>Dark mode</h6>
+
+            <div id="toggle" class="toggle">
+              <div class="indicator"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="art-flex">
+          <article id="box" class="box facebook">
+            <div class="media-mail">
+              <i class="fa-brands fa-square-facebook"></i>
+              <p>@nathanf</p>
+            </div>
+            <div class="nbrtotalfollower">
+              <p class="fontsize35">1987</p>
+              <p class="sub-title">Follower</p>
+            </div>
+            <div class="adlosdfllwrtoday">
+              <i class="fa-solid fa-caret-up"></i>
+              <p class="nbr-today">12 today</p>
+            </div>
+          </article>
+
+          <article id="box" class="box twitter">
+            <div class="media-mail">
+              <i class="fa-brands fa-twitter"></i>
+              <p>@nathanf</p>
+            </div>
+            <div class="nbrtotalfollower">
+              <p class="fontsize35">1044</p>
+              <p class="sub-title">Follower</p>
+            </div>
+            <div class="adlosdfllwrtoday">
+              <i class="fa-solid fa-caret-up"></i>
+              <p class="nbr-today">99 today</p>
+            </div>
+          </article>
+
+          <article id="box" class="box instagram">
+            <div class="media-mail">
+              <i class="fa-brands fa-instagram"></i>
+              <p>@realnathanf</p>
+            </div>
+            <div class="nbrtotalfollower">
+              <p class="fontsize35">11k</p>
+              <p class="sub-title">Follower</p>
+            </div>
+            <div class="adlosdfllwrtoday">
+              <i class="fa-solid fa-caret-up"></i>
+              <p class="nbr-today">1099</p>
+            </div>
+          </article>
+
+          <article id="box" class="box youtube">
+            <div class="media-mail">
+              <i class="fa-brands fa-youtube"></i>
+              <p>Nathan.F</p>
+            </div>
+            <div class="nbrtotalfollower">
+              <p class="fontsize35">8239</p>
+              <p class="sub-title">Subscribers</p>
+            </div>
+            <div class="adlosdfllwrtoday">
+              <i class="fa-solid fa-caret-down"></i>
+              <p class="nbr-today">144 today</p>
+            </div>
+          </article>
+        </article>
+
+        <article class="scndflex">
+
+          <h2 class="head-title">Overview - Today</h2>
+
+          <article class="art-flex">
+            <div class="cards">
+              <article id="box" class="box">
+                <div class="text">
+                  <div class="social">
+                    <i class="fa-brands fa-square-facebook"></i>
+                  </div>
+                  <p>page views</p>
+                </div>
+                <div class="numbers">
+                  <p class="today">
+                    <i class="fa-solid fa-caret-up"></i>3
+                  </p>
+                  <p class="global">87</p>
+                </div>
+              </article>
+
+              <article id="box" class="box">
+                <div class="text">
+                  <div class="social">
+                    <i class="fa-brands fa-square-facebook"></i>
+                  </div>
+                  <p>likes</p>
+                </div>
+                <div class="numbers">
+                  <p class="global">52</p>
+                  <p class="today">
+                    <i></i>2
+                  </p>
+                </div>
+              </article>
+
+              <article id="box" class="box">
+                <div class="text">
+                  <div class="social">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <p>likes</p>
+                </div>
+                <div class="numbers">
+                  <p class="global">5462</p>
+                  <p class="today">
+                    <i></i>2257%
+                  </p>
+                </div>
+              </article>
+
+              <article id="box" class="box">
+                <div class="text">
+                  <div class="social">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <p>profils views</p>
+                </div>
+                <div class="numbers">
+                  <p class="global">52k</p>
+                  <p class="today">
+                    <i></i>1375%
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="cards">
+              <article id="box" class="box">
+                <div class="text">
+                  <div class="social">
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                  <p>Retweets</p>
+                </div>
+                <div id="box" class="numbers">
+                  <p class="global">117</p>
+                  <p class="today">
+                    <i></i>303%
+                  </p>
+                </div>
+              </article>
+
+              <article id="box" class="box">
+                <div class="text">
+                  <div class="social">
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                  <p>Likes</p>
+                </div>
+                <div id="box" class="numbers">
+                  <p class="global">507</p>
+                  <p class="today">
+                    <i></i>553%
+                  </p>
+                </div>
+              </article>
+
+              <article id="box" class="box">
+                <div class="text">
+                  <div class="social">
+                    <i class="fa-brands fa-youtube"></i>
+                  </div>
+                  <p>Likes</p>
+                </div>
+                <div id="box" class="numbers">
+                  <p class="global">107</p>
+                  <p class="today">
+                    <i></i>19%
+                  </p>
+                </div>
+              </article>
+
+              <article id="box" class="box">
+                <div class="text">
+                  <div class="social">
+                    <i class="fa-brands fa-youtube"></i>
+                  </div>
+                  <p>Retweets</p>
+                </div>
+                <div id="box" class="numbers">
+                  <p class="global">1407</p>
+                  <p class="today">
+                    <i></i>12%
+                  </p>
+                </div>
+              </article>
+            </div>
+          </article>
+        </article>
+      </section>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">AlphaCharlieWeb</a>.
+      </div>
+    </article>
+  </main>
+</body>
+</html>

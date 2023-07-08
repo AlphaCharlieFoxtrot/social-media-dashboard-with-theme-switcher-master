@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  position: relative;
+  transition: 0.3s;
+}
+body.active {
+  background-color: hsl(232, 19%, 15%);
+  color: white;
+}
+body main {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main.active {
+  background-color: black;
+}
+body main .main {
+  position: absolute;
+  z-index: 2;
+  top: -25%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+body main .main .absolute-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+body main .main .absolute-section .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main .main .absolute-section .head .head-title h1 {
+  font-size: 28px;
+}
+body main .main .absolute-section .head .head-title h6 {
+  color: hsl(230, 22%, 74%);
+}
+body main .main .absolute-section .head .div-toggle {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 150px;
+}
+body main .main .absolute-section .head .div-toggle h6 {
+  color: hsl(230, 22%, 74%);
+}
+body main .main .absolute-section .head .div-toggle #toggle {
+  width: 50px;
+  height: 27px;
+  background-color: hsl(230, 22%, 74%);
+  border-radius: 50px;
+  position: relative;
+}
+body main .main .absolute-section .head .div-toggle #toggle .indicator {
+  content: "";
+  width: 22px;
+  height: 21px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50px;
+  top: 3px;
+  left: 3px;
+  transition: 0.5s;
+}
+body main .main .absolute-section .head .div-toggle #toggle.active {
+  background: linear-gradient(to left, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+body main .main .absolute-section .head .div-toggle #toggle.active .indicator {
+  left: 50%;
+}
+body main .main .absolute-section .art-flex {
+  display: flex;
+  justify-content: space-between;
+}
+body main .main .absolute-section .art-flex .box {
+  width: 20%;
+  height: 200px;
+  background-color: hsl(227, 47%, 96%);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  gap: 3px;
+}
+body main .main .absolute-section .art-flex .box.active {
+  background-color: hsl(228, 28%, 20%);
+}
+body main .main .absolute-section .art-flex .box .media-mail {
+  display: flex;
+  gap: 5px;
+}
+body main .main .absolute-section .art-flex .box .nbrtotalfollower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+body main .main .absolute-section .art-flex .box .nbrtotalfollower .fontsize35 {
+  font-size: 24px;
+  font-weight: 900;
+}
+body main .main .absolute-section .art-flex .box .nbrtotalfollower .sub-title {
+  color: hsl(228, 12%, 44%);
+}
+body main .main .absolute-section .art-flex .box .adlosdfllwrtoday {
+  display: flex;
+  align-items: end;
+  gap: 5px;
+}
+body main .main .absolute-section .art-flex .facebook {
+  border-top: 4px solid hsl(208, 92%, 53%);
+}
+body main .main .absolute-section .art-flex .facebook .adlosdfllwrtoday {
+  color: hsl(163, 72%, 41%);
+}
+body main .main .absolute-section .art-flex .twitter {
+  border-top: 4px solid hsl(203, 89%, 53%);
+}
+body main .main .absolute-section .art-flex .twitter .adlosdfllwrtoday {
+  color: hsl(163, 72%, 41%);
+}
+body main .main .absolute-section .art-flex .instagram {
+  border-top: 4px solid;
+  -o-border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
+     border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
+}
+body main .main .absolute-section .art-flex .instagram .adlosdfllwrtoday {
+  color: hsl(163, 72%, 41%);
+}
+body main .main .absolute-section .art-flex .youtube {
+  border-top: 4px solid hsl(348, 97%, 39%);
+}
+body main .main .absolute-section .art-flex .youtube .adlosdfllwrtoday {
+  color: hsl(356, 69%, 56%);
+}
+body main .main .absolute-section .scndflex {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body main .main .absolute-section .scndflex .art-flex {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+body main .main .absolute-section .scndflex .art-flex .cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+body main .main .absolute-section .scndflex .art-flex .cards .box {
+  width: 20%;
+  height: 110px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+body main .main .absolute-section .scndflex .art-flex .cards .box.active {
+  background-color: hsl(228, 28%, 20%);
+}
+body main .main .absolute-section .scndflex .art-flex .cards .box .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+body main .main .absolute-section .scndflex .art-flex .cards .box .numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+body main .main .absolute-section .fa-twitter {
+  color: hsl(203, 89%, 53%);
+}
+body main .main .absolute-section .fa-square-facebook {
+  color: hsl(208, 92%, 53%);
+}
+body main .main .absolute-section .fa-instagram {
+  background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: "";
+}
+body main .main .absolute-section .fa-youtube {
+  color: hsl(348, 97%, 39%);
+}/*# sourceMappingURL=style.css.map */
