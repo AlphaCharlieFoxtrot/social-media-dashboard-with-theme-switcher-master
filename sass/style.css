@@ -14,6 +14,14 @@ body {
   position: relative;
   transition: 0.3s;
 }
+@media (max-width: 768px) {
+  body {
+    min-width: 375px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
 body.active {
   background-color: hsl(232, 19%, 15%);
   color: white;
@@ -29,6 +37,15 @@ body main {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 768px) {
+  body main {
+    min-width: 375px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 body main.active {
   background-color: black;
 }
@@ -41,16 +58,42 @@ body main .main {
   flex-direction: column;
   gap: 50px;
 }
+@media (max-width: 768px) {
+  body main .main {
+    min-width: 375px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 body main .main .absolute-section {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
+@media (max-width: 768px) {
+  body main .main .absolute-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
 body main .main .absolute-section .head {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  body main .main .absolute-section .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
 }
 body main .main .absolute-section .head .head-title h1 {
   font-size: 28px;
@@ -63,6 +106,13 @@ body main .main .absolute-section .head .div-toggle {
   align-items: center;
   gap: 15px;
   width: 150px;
+}
+@media (max-width: 768px) {
+  body main .main .absolute-section .head .div-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 body main .main .absolute-section .head .div-toggle h6 {
   color: hsl(230, 22%, 74%);
@@ -95,6 +145,16 @@ body main .main .absolute-section .art-flex {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  body main .main .absolute-section .art-flex {
+    min-width: 375px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
 body main .main .absolute-section .art-flex .box {
   width: 20%;
   height: 200px;
@@ -106,6 +166,15 @@ body main .main .absolute-section .art-flex .box {
   align-items: center;
   transition: 0.5s;
   gap: 3px;
+}
+@media (max-width: 768px) {
+  body main .main .absolute-section .art-flex .box {
+    min-width: 375px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 body main .main .absolute-section .art-flex .box.active {
   background-color: hsl(228, 28%, 20%);
@@ -164,16 +233,45 @@ body main .main .absolute-section .scndflex {
   flex-direction: column;
   gap: 15px;
 }
+@media (max-width: 768px) {
+  body main .main .absolute-section .scndflex {
+    min-width: 375px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 body main .main .absolute-section .scndflex .art-flex {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
+@media (max-width: 768px) {
+  body main .main .absolute-section .scndflex .art-flex {
+    min-width: 375px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
 body main .main .absolute-section .scndflex .art-flex .cards {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  body main .main .absolute-section .scndflex .art-flex .cards {
+    min-width: 375px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
 }
 body main .main .absolute-section .scndflex .art-flex .cards .box {
   width: 20%;
@@ -184,6 +282,14 @@ body main .main .absolute-section .scndflex .art-flex .cards .box {
   justify-content: center;
   align-items: center;
   gap: 15px;
+}
+@media (max-width: 768px) {
+  body main .main .absolute-section .scndflex .art-flex .cards .box {
+    min-width: 375px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 body main .main .absolute-section .scndflex .art-flex .cards .box.active {
   background-color: hsl(228, 28%, 20%);
